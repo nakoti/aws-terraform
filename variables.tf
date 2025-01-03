@@ -16,7 +16,7 @@ variable "key_name" {
 }
 variable "sg" {
   type = list(string)
-  default = ""
+  default = []
   description = "vpc sg ids"
 }
 variable subnet {
