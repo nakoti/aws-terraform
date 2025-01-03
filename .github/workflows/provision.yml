@@ -29,7 +29,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
           aws-region: ca-central-1
         run: |
-          cd tf-example/
           terraform init
           terraform validate
           terraform plan 
