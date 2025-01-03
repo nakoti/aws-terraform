@@ -15,7 +15,7 @@ variable "key_name" {
   description = "ec2 key pair"
 }
 variable "sg" {
-  type = string
+  type = list(string)
   default = ""
   description = "vpc sg ids"
 }
