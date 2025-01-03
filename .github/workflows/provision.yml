@@ -1,13 +1,8 @@
 name: Provision EC2
-
 on:
-  workflow_dispatch:
-    inputs:
-      ec2-name:
-        description: EC2 name
-        required: true
-        default: 'App Server'
-        type: string
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
 jobs:
   provision-ec2:
     runs-on: ubuntu-latest
